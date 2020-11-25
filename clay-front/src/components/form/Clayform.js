@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ClayForm, {ClayInput} from '@clayui/form';
 import ClayIcon, {ClayIconSpriteContext} from '@clayui/icon';
+import Icons from '../assets/icons.svg';
 
 
 // import clayUI
@@ -8,7 +9,6 @@ import '@clayui/css/lib/css/atlas.css';
 
 const Clayform = () => {
     const [active, setActive] = useState(false);
-    const iconPath = '';
     return (
         <div >
             <div className='container'>
@@ -24,8 +24,8 @@ const Clayform = () => {
                         <ClayForm.FeedbackGroup>
                             <ClayForm.FeedbackItem>
                                 <ClayForm.FeedbackIndicator
-                                    spritemap={iconPath}
-                                    symbol='check-circle-full'
+                                    spritemap={Icons}
+                                    symbol='vocabulary'
                                 />
                                 {'I\'m the feedback item'}
                             </ClayForm.FeedbackItem>
